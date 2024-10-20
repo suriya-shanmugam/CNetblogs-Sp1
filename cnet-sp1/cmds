@@ -1,0 +1,5 @@
+sudo docker build -t cnet-sp1:v0 .
+sudo docker tag cnet-sp1:v0 suriyashanmugam/cnet-sp1:v0
+sudo docker push suriyashanmugam/cnet-sp1:v0
+
+sudo docker run --network my_network --name sp1 -p 5001:5001 app-sp1
